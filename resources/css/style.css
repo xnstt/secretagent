@@ -5,17 +5,17 @@ font-size: 18px;
 body{
   font-family: Helvetica;
   margin: 0;
-  color: white;
 }
 
 .sitecontain {
-  max-width: 960px;
+  /*max-width: 960px; */
 }
 
 header{
   display: flex;
   justify-content: flex-start;
   background-color: black;
+  align-items: center;
 }
 
 div {
@@ -23,9 +23,9 @@ div {
 }
 
 header img {
-  height: 1.5rem;
+  max-height: 1.5rem;
   padding-left: 0.5rem;
-  padding-right: 0;
+  padding-right: 0.5rem;
 }
 
 header span {
@@ -56,6 +56,8 @@ header span {
   font-size: 1rem;
   font-weight: bold;
   text-align: left;
+  color: white;
+  padding: 2rem 0rem 0.25rem 0rem;
 }
 
 .x2 {
@@ -63,6 +65,7 @@ header span {
   font-weight: bold;
   top: 0.25rem;
   text-align: left;
+  color: white;
 }
 
 .navigation {
@@ -80,20 +83,66 @@ flex-direction: column;
 
 .product_grid{
   display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  flex-wrap: wrap;
+
 }
 
 .product {
+  display: flex;
+  flex-direction: column;
   border: 4px solid black;
+  width: 30%;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items; center;
+}
+
+.product img {
+  height: 9rem;
+  padding: 2rem 0;
+  width: auto;
+}
+
+.product span {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
 }
 
 .location {
-
+  margin-top: 3rem;
+  width: 35%;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .hours {
+  margin-top: 3rem;
+  width: 35%;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
 
 }
 
 .footer {
+  height: 5rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
 
+.footer span {
+  color: white;
+  text-align: left;
 }
