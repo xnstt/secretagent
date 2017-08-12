@@ -40,6 +40,8 @@ header span {
   height: 25rem;
   align-items: center;
   position: relative;
+  max-width: 960px;
+  overflow: hidden;
 }
 
 .new {
@@ -102,7 +104,7 @@ flex-direction: column;
 .product img {
   height: 9rem;
   padding: 2rem 0;
-  width: auto;
+  max-width: auto;
 }
 
 .product span {
@@ -145,4 +147,21 @@ flex-direction: column;
 .footer span {
   color: white;
   text-align: left;
+}
+
+@media only screen and (max width: 1024px){
+  }
+  nav span{
+    display: none;
+  }
+  .product_grid{
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+  .x1{
+   font-size: 0.5rem;
+  }
+  .x2{
+   font-size: 1rem;
+  }
 }
