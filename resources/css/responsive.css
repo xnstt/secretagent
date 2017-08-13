@@ -111,6 +111,7 @@ flex-direction: column;
 }
 
 .product img {
+  height: auto;
   padding: 2rem 0;
   width: 100%;
 }
@@ -141,8 +142,7 @@ flex-direction: column;
 .info {
   background-color: black;
   color: white;
-  text-align: center;
-  width: 100%;
+  padding: 1rem 2rem;
 }
 
 .footer {
@@ -177,12 +177,12 @@ flex-direction: column;
   .product_grid{
     overflow: hidden;
     flex-wrap: nowrap;
+    width: 75%;
     height: auto;
-    width: 960px;
+    max-width: 960px;
   }
   .product {
     margin: 3%;
-    width: 100%;
   }
   .less1024{
     display: flex;
