@@ -7,19 +7,11 @@ body{
   margin: 0;
 }
 
-.sitecontain {
-  /*max-width: 960px; */
-}
-
 header{
   display: flex;
   justify-content: flex-start;
   background-color: black;
   align-items: center;
-}
-
-div {
-  border: 1px solid red;
 }
 
 header img {
@@ -36,12 +28,17 @@ header span {
 
 .main_banner{
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
   display: flex;
   height: 25rem;
   align-items: center;
   position: relative;
   max-width: 960px;
   overflow: hidden;
+  flex-direction: row;
+
 }
 
 .new {
@@ -51,6 +48,7 @@ header span {
   background-color: black;
   margin-top: 9rem;
   padding: 2rem 3rem;
+  margin-left: 20%;
 
 }
 
@@ -128,6 +126,7 @@ flex-direction: column;
   margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .hours {
@@ -136,6 +135,7 @@ flex-direction: column;
   margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .info {
@@ -143,6 +143,11 @@ flex-direction: column;
   color: white;
   text-align: center;
   width: 100%;
+  padding: 0.5rem 0;
+}
+
+.less1024 {
+  display: none;
 }
 
 .footer {
@@ -155,10 +160,11 @@ flex-direction: column;
 .footer span {
   color: white;
   text-align: left;
+  margin-left: 20%;
 }
-@media only screen and (max width: 1024px){
-  }
-  nav span{
+
+@media only screen and (max-width: 1024px){
+  .navigation nav {
     display: none;
   }
   .x1{
@@ -172,26 +178,83 @@ flex-direction: column;
     justify-content: center;
   }
   .menu{
-    display: block;
+    display: flex;
   }
   .product_grid{
     overflow: hidden;
     flex-wrap: nowrap;
+    display: flex;
     height: auto;
-    width: 960px;
+    width: 100%;
   }
   .product {
     margin: 3%;
-    width: 100%;
+    width: 47%;
   }
+
+#glasses {
+  display: none;
+}
   .less1024{
     display: flex;
     justify-content: space-around;
   }
-  .location{
-    width: 35%;
-}
+  .product_grid .location{
+    display: none;
+  }
+
+  .product_grid .hours {
+    display: none;
+  }
+
   .info{
-    width: 35%;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+
+}
+@media only screen and (max-width: 470px){
+  .main_banner{
+    height: 15rem;
+  }
+
+  .new{
+   width: 100%;
+   margin: 10rem 0 0 0;
+   padding: 0.5rem;
+  }
+  .x1{
+   font-size: 0.5rem;
+  }
+  .x2{
+   font-size: 1rem;
+  }
+  .product_grid{
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+  .product{
+   width: 90%;
+  }
+  #watch {
+    display: none;
+  }
+  .less1024{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .location{
+    width: 90%;
+    margin: 0;
+  }
+  .hours {
+    width: 90%;
+    margin: 0;
+  }
+  .footer span{
+    text-align: center;
   }
 }
